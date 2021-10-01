@@ -43,7 +43,7 @@ nav #menu-mobile {
     display: none;
   }
   
-  #menu-open {
+  .menu-open {
     position: absolute;
     background-color: rgba(0,0,0,0.3);
     border: 2px solid rgba(0,0,0,0.6);
@@ -65,7 +65,7 @@ nav #menu-mobile {
     height: 88px;
   }
   
-  #menu-open {
+  .menu-open {
       display: none;
   }
 }
@@ -78,7 +78,7 @@ nav #menu-mobile {
     height: 88px;
   }
 
-  #menu-open {
+  .menu-open {
     display: none;
   }
 }
