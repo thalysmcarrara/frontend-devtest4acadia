@@ -10,6 +10,7 @@ nav #logo {
   top:20px;
   z-index: 1;
   border-radius: 10px;
+  box-shadow: 0 0 11px 4px #999;
 }
 
 nav #menu-mobile {
