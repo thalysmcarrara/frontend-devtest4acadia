@@ -10,10 +10,10 @@ export default function Header() {
       <nav>
         <img id="logo" src={ logo } alt="logo" />
         <img id="menu-mobile" src={ menuHamburguer } alt="menu icon" />
-        <Button buttonTitle="Signin" />
+        <Button buttonTitle="Signin" styleClass="signin-button" />
       </nav>
 
-      <div id="menu-open">signin</div>
+      <Button buttonTitle="Signin" styleClass="menu-open" />
     </>
   );
 }

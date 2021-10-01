@@ -1,0 +1,90 @@
+@media only screen and (min-width:1101px) and (max-width:1980px) {
+  .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #EDF2F3;
+    height: 600px;
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 9px 3px #666;
+    justify-content: center;
+  }
+
+  .wrapper #button-close {
+    all:unset;
+  }
+
+  .wrapper #close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .wrapper .content {
+    width: 100%;
+    height: 90%;
+    align-self: center;
+  }
+
+  .wrapper .content h1 {
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .wrapper .content .alert {
+    margin: 15px 0 0 0;
+    height: 40px;
+  }
+
+  .wrapper .content form input {
+    background-color: #ADA9AD;
+    display: block;
+    margin: 40px auto 0;
+    width: 80%;
+    height: 10px;
+    line-height: 1.5px;
+    padding: 12px 3px;
+    font-size: 20px;
+    border-style: groove;
+    border-radius: 6px;
+  }
+
+  .wrapper .content .question-text {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .wrapper .content .question-text:hover {
+    cursor: pointer;
+    text-decoration: slateblue;
+    text-decoration-line: underline;
+  }
+
+  .wrapper .content #submit-button {
+    display: block;
+    width: 120px;
+    height: 50px;
+    font-size: 24px;
+    font-family: 'Gemunu Libre', sans-serif;
+    background-color: #1956B4;
+    font-weight: 700;
+    margin: 40px  auto 0;
+    text-align: center;
+    line-height: 45px;
+    border-width: 1px;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1.5px;
+  }
+
+  .wrapper .content #submit-button:hover {
+    transition: ease-in-out;
+    transition-duration: 150ms;
+    background-color: #65A9A6;
+    color: #1956B4;
+  }
+}
