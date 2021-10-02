@@ -13,6 +13,10 @@ nav #logo {
   box-shadow: 0 0 11px 4px #999;
 }
 
+#button-menu {
+  all:unset;
+}
+
 nav #menu-mobile {
   display: none;
 }
@@ -30,11 +34,15 @@ nav #menu-mobile {
     height: 77px;
   }
   
+  #button-menu:hover {
+    cursor: pointer;
+  }
   
   nav #menu-mobile{
     display: inline-block;
-    margin-left: 80%;
-    margin-top: 10px;
+    position: absolute;
+    right: 8%;
+    top: 10px;
     width: 60px;
     height: 100px;
   }
