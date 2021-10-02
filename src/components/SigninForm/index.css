@@ -1,119 +1,130 @@
-@media only screen and (min-width:701px) and (max-width:1980px) {
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #EDF2F3;
+  height: 600px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 9px 3px #666;
+  justify-content: center;
+}
+
+.wrapper #button-close {
+  all:unset;
+}
+
+.wrapper #button-close:hover {
+  cursor: pointer;
+}
+
+.wrapper #close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.wrapper .content {
+  width: 100%;
+  height: 90%;
+  align-self: center;
+}
+
+.wrapper .content h1 {
+  margin: 40px auto 15px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.wrapper .content .alert {
+  background-color: rosybrown;
+  line-height: 40px;
+  margin: 0 auto;
+  height: 40px;
+  border: 2px solid;
+  width: 80%;
+  text-align: center;
+  position: relative;
+}
+.wrapper .content .alert .close-alert {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.wrapper .content .hidden {
+  display: none;
+}
+
+.wrapper .content form .input-background {
+  background-color: #ADA9AD;
+  display: block;
+  margin: 40px auto 0;
+  width: 80%;
+  height: 20px;
+  line-height: 1.5px;
+  padding: 12px 3px;
+  font-size: 20px;
+  border-style: groove;
+  border-radius: 6px;
+}
+
+.wrapper .content .question-text {
+  text-align: center;
+  font-size: 16px;
+}
+
+.wrapper .content .question-text:hover {
+  cursor: pointer;
+  text-decoration: slateblue;
+  text-decoration-line: underline;
+}
+
+.wrapper .content #submit-button {
+  display: block;
+  width: 120px;
+  height: 50px;
+  font-size: 24px;
+  font-family: 'Gemunu Libre', sans-serif;
+  background-color: #1956B4;
+  font-weight: 700;
+  margin: 40px  auto 0;
+  text-align: center;
+  line-height: 45px;
+  border-width: 1px;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.wrapper .content #submit-button:hover {
+  transition: ease-in-out;
+  transition-duration: 150ms;
+  background-color: #65A9A6;
+  color: #1956B4;
+}
+
+.fill {
+  height: 44px;
+}
+
+.unfill {
+  height: 0;
+}
+
+@media only screen and (min-width:300px) and (max-width:700px) {
   .wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #EDF2F3;
-    height: 600px;
-    width: 450px;
-    border-radius: 15px;
-    box-shadow: 6px 6px 9px 3px #666;
-    justify-content: center;
-  }
-
-  .wrapper #button-close {
-    all:unset;
-  }
-
-  .wrapper #button-close:hover {
-    cursor: pointer;
-  }
-
-  .wrapper #close {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-
-  .wrapper .content {
-    width: 100%;
-    height: 90%;
-    align-self: center;
-  }
-
-  .wrapper .content h1 {
-    margin: 40px auto 15px;
-    text-align: center;
-    font-size: 50px;
-  }
-
-  .wrapper .content .alert {
-    background-color: rosybrown;
-    line-height: 40px;
-    margin: 0 auto;
-    height: 40px;
-    border: 2px solid;
-    width: 80%;
-    text-align: center;
-    position: relative;
-  }
-  .wrapper .content .alert .close-alert {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-  }
-
-  .wrapper .content .hidden {
-    display: none;
-  }
-
-  .wrapper .content form input {
-    background-color: #ADA9AD;
-    display: block;
-    margin: 40px auto 0;
-    width: 80%;
-    height: 10px;
-    line-height: 1.5px;
-    padding: 12px 3px;
-    font-size: 20px;
-    border-style: groove;
-    border-radius: 6px;
-  }
-
-  .wrapper .content .question-text {
-    text-align: center;
-    font-size: 16px;
-  }
-
-  .wrapper .content .question-text:hover {
-    cursor: pointer;
-    text-decoration: slateblue;
-    text-decoration-line: underline;
-  }
-
-  .wrapper .content #submit-button {
-    display: block;
-    width: 120px;
-    height: 50px;
-    font-size: 24px;
-    font-family: 'Gemunu Libre', sans-serif;
-    background-color: #1956B4;
-    font-weight: 700;
-    margin: 40px  auto 0;
-    text-align: center;
-    line-height: 45px;
-    border-width: 1px;
-    border-radius: 5px;
-    color: white;
-    letter-spacing: 1.5px;
-  }
-
-  .wrapper .content #submit-button:hover {
-    transition: ease-in-out;
-    transition-duration: 150ms;
-    background-color: #65A9A6;
-    color: #1956B4;
+    width: 95%;
   }
 }
 
-  .fill {
-    height: 44px;
+@media only screen and (min-width:701px) and (max-width:1980px) {
+  .wrapper {
+    width: 450px;
   }
+}
 
-  .unfill {
-    height: 0;
-  }
+  

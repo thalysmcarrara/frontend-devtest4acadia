@@ -13,6 +13,10 @@ nav #logo {
   box-shadow: 0 0 11px 4px #999;
 }
 
+#button-menu {
+  all:unset;
+}
+
 nav #menu-mobile {
   display: none;
 }
@@ -30,11 +34,15 @@ nav #menu-mobile {
     height: 77px;
   }
   
+  #button-menu:hover {
+    cursor: pointer;
+  }
   
   nav #menu-mobile{
     display: inline-block;
-    margin-left: 80%;
-    margin-top: 10px;
+    position: absolute;
+    right: 8%;
+    top: 10px;
     width: 60px;
     height: 100px;
   }
@@ -43,7 +51,7 @@ nav #menu-mobile {
     display: none;
   }
   
-  .menu-open {
+  /* .menu-open {
     position: absolute;
     background-color: rgba(0,0,0,0.3);
     border: 2px solid rgba(0,0,0,0.6);
@@ -54,7 +62,7 @@ nav #menu-mobile {
     place-items: center;
     font-weight: 800;
     letter-spacing: 1.3px;
-  }
+  } */
 }
 
 /* tablet */
@@ -65,9 +73,9 @@ nav #menu-mobile {
     height: 88px;
   }
   
-  .menu-open {
+  /* .menu-open {
       display: none;
-  }
+  } */
 }
 
 /* desktop */
@@ -78,7 +86,7 @@ nav #menu-mobile {
     height: 88px;
   }
 
-  .menu-open {
+  /* .menu-open {
     display: none;
-  }
+  } */
 }

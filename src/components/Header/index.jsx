@@ -1,19 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../assets/logo.png';
-import menuHamburguer from '../../assets/menu_black_36dp.svg';
+import BurguerMenu from '../../assets/menu_black_36dp.svg';
 import Button from '../Button';
+import ButtonMobile from '../ButtonMobile';
 import './index.css';
 
 export default function Header() {
+  const [openMenu, setOpenMenu] = useState(false);
+  const handleOpenClose = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
     <>
       <nav>
         <img id="logo" src={ logo } alt="logo" />
-        <img id="menu-mobile" src={ menuHamburguer } alt="menu icon" />
-        <Button buttonTitle="Signin" styleClass="signin-button" />
+        <button
+          type="button"
+          id="button-menu"
+          onClick={ handleOpenClose }
+        >
+          <img id="menu-mobile" src={ BurguerMenu } alt="menu icon" />
+        </button>
+        <Button buttonTitle="Sign in" styleClass="signin-button" />
       </nav>
 
-      <Button buttonTitle="Signin" styleClass="menu-open" />
+      <ButtonMobile
+        buttonTitle="Sign in"
+        styleClass="menu-open"
+        handleOpenClose={ openMenu }
+      />
     </>
   );
 }

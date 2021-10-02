@@ -73,6 +73,7 @@ export default function SigninForm() {
         <form onSubmit={ handleSubmit }>
           <label htmlFor="email">
             <input
+              className="input-background"
               onChange={ handleChange }
               required
               type="email"
@@ -84,6 +85,7 @@ export default function SigninForm() {
 
           <label htmlFor="password">
             <input
+              className="input-background"
               onChange={ handleChange }
               required
               type="password"
