@@ -7,6 +7,7 @@ import closeAlert from '../../assets/closealert.svg';
 import './index.css';
 
 const initialValue = {
+  name: '',
   email: '',
   password: '',
 };
@@ -23,10 +24,10 @@ export default function SigninForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    axios.post('https://apidevtest4cadia.herokuapp.com/login', formData).then((response) => {
-      const { token } = response.data;
-      localStorage.setItem('token', token);
-      history.push('/dashboard');
+    axios.post('https://apidevtest4cadia.herokuapp.com/register', formData).then((response) => {
+      const { user } = response.data;
+      localStorage.setItem('user', user);
+      history.push('/');
     }).catch((err) => {
       const { message } = err.response.data;
       setError(message);
@@ -51,7 +52,7 @@ export default function SigninForm() {
         <img id="close" src={ close } alt="close modal" />
       </button>
       <div className="content">
-        <h1>SignIn</h1>
+        <h1>Sign Up</h1>
 
         <div className={ error !== '' ? 'unfill' : 'fill' } />
 
@@ -70,6 +71,18 @@ export default function SigninForm() {
         </div>
 
         <form onSubmit={ handleSubmit }>
+          <label htmlFor="name">
+            <input
+              className="input-background"
+              onChange={ handleChange }
+              required
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+          </label>
+
           <label htmlFor="email">
             <input
               className="input-background"
@@ -95,9 +108,9 @@ export default function SigninForm() {
             />
           </label>
 
-          <RedirectLink path="/register" text="Dont have an account?" />
+          <RedirectLink path="/login" text="already have an account?" />
 
-          <button id="submit-button" type="submit">Login</button>
+          <button id="submit-button" type="submit">Sign Up</button>
         </form>
       </div>
     </div>

@@ -1,0 +1,16 @@
+.wrapper .content .question-text {
+  text-align: center;
+  font-size: 16px;
+}
+
+.wrapper .content .question-text:hover {
+  cursor: pointer;
+  text-decoration: #000;
+  text-decoration-line: underline;
+  text-decoration-color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
