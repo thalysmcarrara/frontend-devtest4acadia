@@ -7,7 +7,7 @@ nav {
 nav #logo {
   position: absolute;
   left: 6%;
-  top:20px;
+  top: 37px;
   z-index: 1;
   border-radius: 10px;
   box-shadow: 0 0 11px 4px #999;
@@ -25,13 +25,17 @@ nav #menu-mobile {
 /* mobile */
 
 @media only screen and (min-width:300px) and (max-width:700px) {
+  html {
+    overflow: hidden;
+  }
+  
   nav {
     background-color: rgba(0,0,0,0.2);
   }
   
   nav #logo {
-    width: 259px;
-    height: 77px;
+    width: 155px;
+    height: 46px;
   }
   
   #button-menu:hover {

@@ -51,7 +51,7 @@ export default function SigninForm() {
         <img id="close" src={ close } alt="close modal" />
       </button>
       <div className="content">
-        <h1>SignIn</h1>
+        <h1>Sign In</h1>
 
         <div className={ error !== '' ? 'unfill' : 'fill' } />
 
