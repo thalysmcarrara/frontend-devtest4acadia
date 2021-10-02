@@ -1,4 +1,4 @@
-@media only screen and (min-width:1101px) and (max-width:1980px) {
+@media only screen and (min-width:701px) and (max-width:1980px) {
   .wrapper {
     position: relative;
     display: flex;
@@ -13,6 +13,10 @@
 
   .wrapper #button-close {
     all:unset;
+  }
+
+  .wrapper #button-close:hover {
+    cursor: pointer;
   }
 
   .wrapper #close {
@@ -30,14 +34,31 @@
   }
 
   .wrapper .content h1 {
-    margin: 40px auto 0;
+    margin: 40px auto 15px;
     text-align: center;
     font-size: 50px;
   }
 
   .wrapper .content .alert {
-    margin: 15px 0 0 0;
+    background-color: rosybrown;
+    line-height: 40px;
+    margin: 0 auto;
     height: 40px;
+    border: 2px solid;
+    width: 80%;
+    text-align: center;
+    position: relative;
+  }
+  .wrapper .content .alert .close-alert {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .wrapper .content .hidden {
+    display: none;
   }
 
   .wrapper .content form input {
@@ -88,3 +109,11 @@
     color: #1956B4;
   }
 }
+
+  .fill {
+    height: 44px;
+  }
+
+  .unfill {
+    height: 0;
+  }
