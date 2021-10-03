@@ -54,19 +54,6 @@ nav #menu-mobile {
   nav .signin-button {
     display: none;
   }
-  
-  /* .menu-open {
-    position: absolute;
-    background-color: rgba(0,0,0,0.3);
-    border: 2px solid rgba(0,0,0,0.6);
-    width: 100%;
-    height: 77px;
-    font-size: 36px;
-    display: grid;
-    place-items: center;
-    font-weight: 800;
-    letter-spacing: 1.3px;
-  } */
 }
 
 /* tablet */
@@ -76,10 +63,6 @@ nav #menu-mobile {
     width: 296px;
     height: 88px;
   }
-  
-  /* .menu-open {
-      display: none;
-  } */
 }
 
 /* desktop */
@@ -89,8 +72,4 @@ nav #menu-mobile {
     width: 296px;
     height: 88px;
   }
-
-  /* .menu-open {
-    display: none;
-  } */
 }
