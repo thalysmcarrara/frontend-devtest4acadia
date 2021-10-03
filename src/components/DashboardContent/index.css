@@ -1,0 +1,30 @@
+#main-dashboard {
+  margin: 0;
+}
+
+#container {
+  background-color: rgba(135, 172, 163);
+  min-height: 60vh;
+  max-width: 800px;
+  margin: 40px auto 0;
+  box-shadow: 1px 1px 5px 1px #999;
+  border-radius: 15px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width:300px) and (max-width:900px) {
+  #container {
+    width: 90%;
+  }
+
+  .transaction-card {
+    height: 260px;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width:1980px) {
+  #container {
+    width: 800px;
+  }
+}
+
