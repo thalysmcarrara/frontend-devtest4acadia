@@ -10,7 +10,7 @@ nav #logo {
   top: 37px;
   z-index: 1;
   border-radius: 10px;
-  box-shadow: 0 0 11px 4px #999;
+  box-shadow: 1px 1px 5px 1px #555;
 }
 
 #button-menu {
@@ -30,7 +30,7 @@ nav #menu-mobile {
   }
 
   nav {
-    background-color: rgba(0,0,0,0.2);
+    background-color: #87ACA3;
   }
   
   nav #logo {
