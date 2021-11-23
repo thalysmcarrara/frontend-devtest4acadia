@@ -35,3 +35,5 @@ npm start
 ```
 
 logo após rodar esse comando abrirá uma aba no seu navegador com o projeto.
+
+o backend da aplicação está em um repositório separado, caso queira ver o código este é o [link](https://github.com/thalysmcarrara/dev-test-4cadia) para o código fonte.
