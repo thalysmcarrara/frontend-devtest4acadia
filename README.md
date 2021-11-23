@@ -1,1 +1,5 @@
-![](https://media3.giphy.com/media/gLcUG7QiR0jpMzoNUu/giphy.gif?cid=ecf05e47suiqg1zshpcwlrsq945krnern7zl8w4engypudec&rid=giphy.gif&ct=g)
+# frontend openBanking
+
+aplicação fullstack que simula uma landing page de um banco, com as funcionalidades de login, cadastro e dashboard de transações
+
+## 🚀 Começando
